@@ -1,0 +1,33 @@
+#container{
+          top:0px;
+          padding-top:0;
+          margin:auto;
+          position:relative;
+          width:950px;
+          height:100%;
+          text-align:center;          
+          }
+header {
+          height:100px;
+          width:950px;
+          background-color:red;
+        }
+main {
+          height:1000px;
+          width:750px;
+          background-color:blue;
+          float:right;
+      }
+aside {
+          height:1000px ;
+          width:200px;
+          background-color:green;
+          float:left;
+        }
+footer {
+          height:100px;
+          width:950px;
+          background-color:yellow;
+          float:left;
+        }
+        

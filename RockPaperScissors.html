@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title>Javascript - Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <script>
+    function lol() {prompt("NOSCOPE");}
+    function rules() {
+      document.getElementById("demo").innerHTML = "There are rules. After prompt window comes, type answer. It has be: rock, paper or scissors. If you want back, just refresh.";
+      }
+    function rules() {
+      playerhuman = prompt("Your choice?");
+      if (playerhuman = "paper" or "rock" or "scissors"){;}
+        else {alert("nonsense?!" return = 0;);}
+      playercomprand = Math.random();
+      var playercomp;
+      if (playercomprand =< 0.3333 ) {playercomp = "rock";}
+           else if (playercomprand =< 0.6666 ) and (playercomprand >= 0.3333 ){playercomp = "paper";}
+           else if (playercomprand >= 0.3333 ){playercomp = "scissors";}
+      alert(playercomp); alert (playerhuman);
+      if   (playercomp == playerhuman) { alert("Tie, score = + 0" return = 0;)}
+        else if (playercomp = "paper" ) and (playerhuman = "scissors" ){ alert("You won" return = 0;);}
+        else if (playercomp = "paper" ) and (playerhuman = "rock" ){ alert("You loose" return = 0;);}
+        else if (playercomp = "rock" ) and (playerhuman = "paper" ){ alert("You won" return = 0;);}
+        else if (playercomp = "rock" ) and (playerhuman = "scissors" ){ alert("You loose" return = 0;);}
+        else if (playercomp = "scissors" ) and (playerhuman = "rock" ){ alert("You won" return = 0;);}
+        else if (playercomp = "scissors" ) and (playerhuman = "paper" ){ alert("You loose" return = 0;);}              
+  </script>
+    <button onclick="rules()">Read rules</button>
+    <br>
+    <button onclick="game()">Start Game!</button>
+    <p id="demo">........................................................................................................................................................................................................</p>
+    <button onclick='document.getElementById("demo").innerHTML="lol"'>useless lol button</button>
+    <button onclick="lol()">LOLEC FUNCTION</button>  
+  </body>
+</html>

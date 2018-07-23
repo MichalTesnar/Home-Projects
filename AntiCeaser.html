@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>The Anti-Caesar cipher</title>
+  </head>
+  <body>
+    <script>
+    var word = prompt("What is your word to decrypt?");
+    document.write("your word is " + word + "<br>");
+    //var move = prompt("How many letter of alphabet do you want to move?")
+    //document.write("you want to move by " + move + " letters <br>" );
+    var separatedword = word.split("");
+    document.write("your " + word.length + " letters are " + separatedword + "<br>");
+    var crypt = [];
+    for(move=1;move<27;move++){
+    for (i=0; i < word.length; i++){
+      var change = separatedword.shift();
+      console.log(change + "<br>");
+      var changed = change.charCodeAt(0);
+      console.log(+changed-97 + "<br>");
+      var crypted = +changed + -move - 97;
+      console.log(crypted + "<br>");
+      crypt.push(crypted);    
+        }
+    console.log(crypt.toString() + "<br>");
+    
+    var encrypt = [];                                     
+    for (i=0; i < word.length; i++){
+      var change2 = crypt.shift();
+      console.log(change2 + "<br>");
+      var coded = String.fromCharCode(97 + +change2);
+      console.log(coded + "<br>");
+      encrypt.push(coded);         
+        }
+    var nearlyfinal = encrypt.toString();                             
+    console.log(nearlyfinal + "<br>");
+    final = nearlyfinal.replace (/,/g,"");
+    document.write(final + "<br>");
+    }    
+    </script>
+  </body>
+</html>
